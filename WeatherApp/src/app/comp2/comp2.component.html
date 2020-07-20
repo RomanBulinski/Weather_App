@@ -1,0 +1,17 @@
+<div style="padding: 13px;">
+  <mat-spinner *ngIf="stations.length === 0"></mat-spinner>
+
+  <mat-card *ngFor="let station of stations" style="margin-top:10px;">
+    <mat-card-header>
+      <mat-card-title>{{station.stacja}}</mat-card-title>
+      <mat-card-subtitle>{{station.temperatura}},{{station.data_pomiaru}},{{station.godzina_pomiaru}}
+
+      </mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+
+    </mat-card-content>
+
+  </mat-card>
+</div>
